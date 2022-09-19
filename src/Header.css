@@ -35,7 +35,7 @@
 .header-middle {
     display: flex;
     justify-content: right;
-    padding: 15px;
+    padding: 12px;
     background-color: #F9F9F9;
 }
 
@@ -43,17 +43,147 @@
 
 .left-options {
     display: flex;
+    margin-right: 8px;
 }
+
 
 
 .right-options {
     display: flex;
+    margin-right: 8px;
+    font-weight: bold;
+
 }
 
 
 .vl {
     border-right: 0.7px solid lightgray;
     height: 20px;
-    margin-left: 35px;
+    margin-left: 20px;
 
+}
+
+
+.header-bottom {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 0.1px solid lightgray;    
+}
+
+.header-bottom > img {
+    object-fit: contain;
+    height: 55px;
+}
+
+
+.header-search {
+
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    height: 55px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background-color: #F9F9F9;
+}
+
+.search-icon {
+    margin-left: 25px;
+}
+
+.header-search > input {
+   width: 760px;
+   outline: none;
+   border: none;
+   background: none;
+   margin-left: 5px;
+   font-size: 17px;
+}
+
+
+.find-store {
+   display: flex;
+   margin-left: 22px;
+   margin-top: 8px;
+   align-content: center;
+   cursor: pointer;
+   
+}
+
+
+
+
+.find-store > p {
+    font-size: 15px;
+}
+
+.find-store:hover > h3 {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    cursor: pointer;
+}
+
+
+.arrow {
+    font-weight: 100;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+.my-account {
+   margin-left: 25px;
+   margin-bottom: 15px;
+}
+
+
+.account-header {
+   display: flex;
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+
+.account-header:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+
+}
+
+
+.account-title {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+
+
+
+.my-account > p {
+    font-weight: lighter;
+    font-size: 13px;
+    margin-left: 25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.shopping-cart {
+ justify-content: right;
+ margin-left: 120px;
+}
+
+
+.shopping-cart:hover > .cart {
+    color: #006554;
+    cursor: pointer;
+}
+
+
+.shopping-cart > p {
+    font-size: 14px;
+    cursor: pointer;
 }

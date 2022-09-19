@@ -1,0 +1,6 @@
+.image-arrows {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    align-content: center;
+}

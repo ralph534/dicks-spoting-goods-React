@@ -1,0 +1,11 @@
+.nav-option {
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+
+.nav-option:hover {
+    border-bottom: 5px solid darkorange;
+    font-weight: bold;
+    cursor: pointer;
+}

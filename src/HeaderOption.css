@@ -2,3 +2,10 @@
     margin-left: 25px;
     font-size: 13px;
 }
+
+
+.header-title:hover {
+    border-bottom: 1px solid orange;
+    font-weight: bold;
+    cursor: pointer;
+}

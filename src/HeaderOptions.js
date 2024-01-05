@@ -4,7 +4,9 @@ import './HeaderOption.css'
 function HeaderOptions({title}) {
   return (
     <div>
-        <p className="header-title">{title}</p>
+      <ul>
+        <li className="header-title">{title}</li>
+      </ul>
     </div>
   )
 }

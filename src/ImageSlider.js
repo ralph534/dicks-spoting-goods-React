@@ -21,26 +21,30 @@ function ImageSlider({slides}) {
         backgroundImage: `url(${slides[currentIndex].url})`
     }
 
-    const leftArrowStyle = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50)',
-        left: '32px',
-        fontSize: '45px',
-        color: '#fff',
-        zindex: 1,
-        cursor: 'pointer'
-    }
+    
 
     const rightArrowStyle = {
         position: 'absolute',
         top: '50%',
         transform: 'translate(0, -50)',
         right: '32px',
-        fontSize: '45px',
+        fontSize: '15px',
         color: '#fff',
         zindex: 1,
-        cursor: 'pointer'
+        cursor: 'pointer',
+        
+    }
+
+    const leftArrowStyle = {
+        position: 'absolute',
+        top: '50%',
+        transform: 'translate(0, -50)',
+        right: '32px',
+        fontSize: '15px',
+        color: '#fff',
+        zindex: 1,
+        cursor: 'pointer',
+        
     }
 
     const goToPrevious = () => {
@@ -56,19 +60,28 @@ function ImageSlider({slides}) {
     }
 
 
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+    }
+
+
   return (
     <div style={sliderStyle} className='ImageSlider'>
-        <div style={leftArrowStyle}>
-        <IoIosArrowBack onClick={goToPrevious}/>
+        <div className='left-arrow'  onClick={goToPrevious}>
+        <IoIosArrowBack />
         </div>
-        <div style={rightArrowStyle}>
+        <div className='right-arrow' style={rightArrowStyle}>
         <IoIosArrowForward onClick={goToNext}/>
         </div>
 
-        <div style={slidesStyles}>
-            
+        <div style={slidesStyles}></div>
+            <div className='dot-Container'>
+                {slides.map((slide, slideIndex) => (
+                    <div key={slideIndex} className='dots' onClick={() => goToSlide(slideIndex)}>•</div>
+                ))}
+                <div className='pause'>||</div>
+            </div>
         </div>
-    </div>
   )
 }
 

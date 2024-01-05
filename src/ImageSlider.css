@@ -1,6 +1,65 @@
-.image-arrows {
+.left-arrow:hover {
+   background-color: green;
+   opacity: 1;
+   
+}
+
+
+.right-arrow:hover {
+   opacity: 1;
+   background-color: green;
+}
+
+
+.left-arrow {
+    position: absolute;
     display: flex;
-    background-color: red;
-    justify-content: space-between;
-    align-content: center;
+    top: 50%;
+    transform: translate(0, -50);
+    left: 32px;
+    font-size: 15px;
+    padding: 15px;
+    color: #fff;
+    zindex: 1;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+
+.right-arrow {
+   border-radius: 50%;
+   background-color: black;
+   opacity: 0.5;
+   display: flex;
+   padding: 15px;
+}
+
+
+
+
+.dot-Container {
+   display: flex;
+   justify-content: center;
+}
+
+.dots {
+   padding: 1px;
+   font-size: 75px;
+   color: lightgrey;
+}
+
+.pause {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-size: 35px;
+  color: orange;
+}
+
+
+.dots:hover {
+   color: orange;
+   cursor: pointer;
 }

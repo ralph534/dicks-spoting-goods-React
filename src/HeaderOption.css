@@ -1,11 +1,13 @@
 .header-title {
     margin-left: 25px;
     font-size: 13px;
+    list-style: none;
 }
 
 
+
 .header-title:hover {
-    border-bottom: 1px solid orange;
+    border-bottom: 3px solid orange;
     font-weight: bold;
     cursor: pointer;
 }
